@@ -57,7 +57,7 @@ func handleConnection(conn net.Conn) {
 		case 3:
 			conn = utils.RequestSubmission(conn)
 		case 4:
-
+			conn = utils.TerminateSubmission(conn)
 		case 5:
 			conn = utils.Disconnect(conn)
 		default:
